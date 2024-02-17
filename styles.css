@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu|Open+Sans|Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Open+Sans");
 
 html{
     scroll-behavior: smooth;
@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     margin: 0;
     opacity: 1;
-    background-image: url(assets/v1016-b-09.jpg);
+    background-image: url(assets/v1016-b-10.jpg);
     background-color: black;
     background-size: cover;
     background-attachment: fixed;
@@ -47,11 +47,6 @@ body {
     padding: 1rem;
     text-decoration: none;
 }
-@media screen and (max-width: 500px){
-    .bar .nav li a{
-        padding: 0.5rem;
-    }
-}
 .bar .drop img {
     filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(201deg) brightness(104%) contrast(100%);
 }
@@ -81,12 +76,29 @@ body {
 .bar .nav img{
     transform: rotate(90deg) scale(1);
 }
+@media screen and (max-width: 700px){
+    .bar .nav li a{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .bar .nav img{
+        margin: 0;
+        margin-top: 0.3rem;
+        width: 1rem;
+        height: 0.7rem;
+        transform: rotate(90deg) scale(0.7);
+    }
+}
 .drop:hover .menu{
     display: block;
 }
 .drop:hover img{
     filter: invert(99%) sepia(100%) saturate(7494%) hue-rotate(359deg) brightness(100%) contrast(102%);
-    transform: rotate(180deg);
+    transform: rotate(180deg) scale(0.7);
+    margin: 0;
+    margin-top: 0.3rem;
+    width: 1rem;
+    height: 0.7rem;
 }
 
 .foreground{
@@ -142,7 +154,8 @@ body {
     margin-top: 6rem;
     text-align: center;
     color: rgb(255, 0, 106);
-    font-family: "Roboto Mono";
+    font-family: "Ubuntu";
+    letter-spacing: 0.05rem;
 }
 .name {
     font-size: 2.3rem;
@@ -150,6 +163,7 @@ body {
     text-align: center;
     color: white;
     font-family: "Open Sans";
+    letter-spacing: 0.05rem
 }
 @media screen and (max-width: 600px){
     .name{
@@ -258,12 +272,12 @@ span {
     padding: 1rem;
     padding-right: 5rem;
     padding-left: 5rem;
-    text-align: justify;
+    text-align: left;
 }
 @media screen and (max-width: 800px){
     .about article{
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
     }
 }
 .projects article{
@@ -376,6 +390,7 @@ span {
 @media screen and (max-width: 700px){
     .contact input, #message{
         width: 100%;
+        margin-left: 0;
     }
 }
 .footer{
