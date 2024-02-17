@@ -94,11 +94,17 @@ body {
 }
 .drop:hover img{
     filter: invert(99%) sepia(100%) saturate(7494%) hue-rotate(359deg) brightness(100%) contrast(102%);
-    transform: rotate(180deg) scale(0.7);
-    margin: 0;
-    margin-top: 0.3rem;
-    width: 1rem;
-    height: 0.7rem;
+    transform: rotate(180deg);
+}
+@media screen and (max-width: 700px){
+    .drop:hover img{
+        filter: invert(99%) sepia(100%) saturate(7494%) hue-rotate(359deg) brightness(100%) contrast(102%);
+        transform: rotate(180deg) scale(0.7);
+        margin: 0;
+        margin-top: 0.3rem;
+        width: 1rem;
+        height: 0.7rem;
+    }
 }
 
 .foreground{
@@ -270,11 +276,11 @@ span {
 }
 .about article{
     padding: 1rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
     text-align: left;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .about article{
         padding-right: 0.7rem;
         padding-left: 0.7rem;
